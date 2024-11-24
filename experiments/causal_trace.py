@@ -39,7 +39,7 @@ def main():
 
     aa(
         "--model_name",
-        default="gpt2-xl",
+        default="gpt2-medium",
         choices=[
             "gpt2-xl",
             "EleutherAI/gpt-j-6B",
@@ -96,7 +96,7 @@ def main():
             uniform_noise = True
             noise_level = float(noise_level[1:])
 
-    for knowledge in tqdm(knowns):
+    for knowledge in tqdm(knowns[:100]):
         known_id = knowledge["known_id"]
         for kind in None, "mlp", "attn":
             kind_suffix = f"_{kind}" if kind else ""
