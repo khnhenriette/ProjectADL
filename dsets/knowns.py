@@ -7,13 +7,13 @@ from torch.utils.data import Dataset
 
 from util.globals import *
 
-REMOTE_URL = f"{REMOTE_ROOT_URL}/data/dsets/simple_math.json"
+REMOTE_URL = f"{REMOTE_ROOT_URL}/data/dsets/known_1000.json"
 
 
 class KnownsDataset(Dataset):
     def __init__(self, data_dir: str, *args, **kwargs):
         data_dir = Path(data_dir)
-        known_loc = data_dir / "known_1000.json"
+        known_loc = data_dir / "simple_math.json"
         if not known_loc.exists():
             print(f"{known_loc} does not exist. Downloading from {REMOTE_URL}")
             data_dir.mkdir(exist_ok=True, parents=True)
