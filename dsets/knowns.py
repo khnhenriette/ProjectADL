@@ -7,7 +7,7 @@ from torch.utils.data import Dataset
 
 from util.globals import *
 
-REMOTE_URL = f"{REMOTE_ROOT_URL}/data/dsets/known_1000.json"
+REMOTE_URL = f"{REMOTE_ROOT_URL}/data/dsets/simple_math.json"
 
 
 class KnownsDataset(Dataset):
