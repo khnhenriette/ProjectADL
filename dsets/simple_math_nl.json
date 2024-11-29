@@ -3409,11 +3409,11 @@
     },
     {
         "known_id": 427,
-        "prompt": "8 equals",
-        "attribute": "8",
-        "subject": "",
-        "template": "8 equals",
-        "prediction": "8 equals 8"
+        "prompt": "8 minus 8 equals",
+        "attribute": "0",
+        "subject": "minus",
+        "template": "8 {} 8 equals",
+        "prediction": "8 minus 8 equals 0"
     },
     {
         "known_id": 428,
