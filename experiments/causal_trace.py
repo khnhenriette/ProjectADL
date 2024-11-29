@@ -39,7 +39,7 @@ def main():
 
     aa(
         "--model_name",
-        default="/content/drive/MyDrive/gpt2_math_finetuned", #import the fine-tuned model from google drive 
+        default="/content/drive/MyDrive/gpt2_finetuned_hpo", #import the fine-tuned model from google drive 
         choices=[
             "gpt2-xl",
             "EleutherAI/gpt-j-6B",
@@ -47,7 +47,7 @@ def main():
             "gpt2-large",
             "gpt2-medium",
             "gpt2",
-            "/content/drive/MyDrive/gpt2_math_finetuned", 
+            "/content/drive/MyDrive/gpt2_finetuned_hpo", 
         ],
     )
     aa("--fact_file", default=None)
