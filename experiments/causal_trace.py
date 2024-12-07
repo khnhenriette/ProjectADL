@@ -50,7 +50,8 @@ def main():
             "/content/drive/MyDrive/gpt2_finetuned_hpo", 
         ],
     )
-    aa("--fact_file", default=None)
+    #aa("--fact_file", default=None)
+    aa("--fact_file", default="/content/rome/dsets/simple_math_nl.json")
     aa("--output_dir", default="results/{model_name}/causal_trace")
     aa("--noise_level", default="s3", type=parse_noise_rule)
     aa("--replace", default=0, type=int)
